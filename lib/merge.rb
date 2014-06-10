@@ -19,5 +19,4 @@ class Array
     end
     array + right + left
   end
-
 end
