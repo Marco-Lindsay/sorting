@@ -1,6 +1,3 @@
-require 'pry'
-require 'pry-nav'
-
 class Insertion
 
   def self.insert_sort(array)
