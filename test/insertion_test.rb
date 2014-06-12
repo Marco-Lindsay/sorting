@@ -33,12 +33,22 @@ describe "Insertion tests"  do
   end
 
 
-  # def test_benchmark
-  #   puts 'best'
-  #   puts Benchmark.measure{@best.merge_sort}
-  #   puts 'worst'
-  #   puts Benchmark.measure{@worst.merge_sort}
-  #   puts 'random'
-  #   puts Benchmark.measure{@rand.merge_sort}
-  # end
+  def test_benchmark
+    puts 'best'
+    puts Benchmark.measure{@best.merge_sort}
+    puts 'worst'
+    puts Benchmark.measure{@worst.merge_sort}
+    puts 'random'
+    puts Benchmark.measure{@rand.merge_sort}
+  end
+
+  def test_benchmark_quick
+    puts 'best'
+    puts Benchmark.measure{@best.quick_sort}
+    puts 'worst'
+    puts Benchmark.measure{@worst.quick_sort}
+    puts 'random'
+    puts Benchmark.measure{@rand.quick_sort}
+  end
+
 end
