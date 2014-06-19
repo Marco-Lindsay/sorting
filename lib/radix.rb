@@ -1,10 +1,9 @@
 class Array
   def radix_sort
     array_copy = self
-    max = self.max > self.min.abs ? self.max : self.min.abs
-    amount_of_passes = max.to_s.length
+    amount_of_passes = [max, min.abs].max.to_s.length
     amount_of_passes.times do |i|
-      buckets = []
+      buckets = []    
       20.times {buckets << []}
       base = 10**i
       array_copy.each do |n|
